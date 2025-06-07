@@ -1,5 +1,7 @@
-name: helloworld # 这是你的插件的唯一识别名。
-desc: 这是 AstrBot 的默认插件，支持关键词回复。 # 插件简短描述
-version: v1.3 # 插件版本号。格式：v1.1.1 或者 v1.1
-author: Soulter # 作者
-repo: https://github.com/Soulter/helloworld # 插件的仓库地址
+name: astrbot_plugin_weakblacklist
+desc: 弱黑名单插件，对黑名单的人进行概率回复，即使@机器人也进行概率回复
+version: v1.0
+author: 和泉智宏
+repo: https://github.com/0d00-Ciallo-0721/astrbot_plugin_weakblacklist
+
+
