@@ -5,11 +5,23 @@
     "default": 0.3,
     "hint": "范围 0.0-1.0，例如 0.3 表示有 30% 的概率回复弱黑名单用户的消息。设置为 0 则从不回复，设置为 1 则总是回复。"
   },
+  "group_reply_probability": {
+    "description": "对弱黑名单群聊的回复概率",
+    "type": "float",
+    "default": 0.3,
+    "hint": "范围 0.0-1.0，例如 0.3 表示有 30% 的概率回复弱黑名单群聊的消息。设置为 0 则从不回复，设置为 1 则总是回复。"
+  },
   "max_interception_count": {
-    "description": "最大连续拦截次数后触发保底回复",
+    "description": "最大连续拦截次数后触发保底回复（用户）",
     "type": "int",
     "default": 5,
     "hint": "当黑名单用户的消息连续被拦截达到此次数时，下一次将强制回复。设置为0则禁用保底机制。"
+  },
+  "max_group_interception_count": {
+    "description": "最大连续拦截次数后触发保底回复（群聊）",
+    "type": "int",
+    "default": 8,
+    "hint": "当黑名单群聊的消息连续被拦截达到此次数时，下一次将强制回复。设置为0则禁用保底机制。"
   },
   "log_blocked_messages": {
     "description": "是否记录被拦截的消息",
@@ -22,5 +34,11 @@
     "type": "list",
     "default": [],
     "hint": "弱黑名单用户的QQ号列表，可以在此直接添加或删除用户ID"
+  },
+  "blacklisted_groups": {
+    "description": "弱黑名单群聊列表",
+    "type": "list",
+    "default": [],
+    "hint": "弱黑名单群聊的群号列表，可以在此直接添加或删除群号"
   }
 }
