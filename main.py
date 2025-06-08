@@ -6,7 +6,7 @@ import os
 import json
 from typing import Set, Dict
 
-@register("WeakBlacklist", "Your Name", "弱黑名单插件 - 支持用户和群聊，带保底回复，保持对话上下文", "1.1.0", "https://github.com/your-repo")
+@register("astrbot_plugin_weakblacklist", "和泉智宏", "弱黑名单插件 - 支持用户和群聊，带保底回复，保持对话上下文", "1.1.0", "https://github.com/0d00-Ciallo-0721/astrbot_plugin_weakblacklist")
 class WeakBlacklistPlugin(Star):
     def __init__(self, context: Context, config: AstrBotConfig):
         super().__init__(context)
